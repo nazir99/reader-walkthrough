@@ -3,6 +3,8 @@
 A Claude Code skill that reviews AI-built work the way its real reader will
 read it, before a human has to.
 
+Part of [software-factory](https://github.com/nazir99/software-factory): the review gate.
+
 ## Why it exists
 
 An agent can build a dashboard that passes every design guideline and still
