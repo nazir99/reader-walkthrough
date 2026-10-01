@@ -1,9 +1,13 @@
 # reader-walkthrough
 
-A Claude Code skill that reviews AI-built work the way its real reader will
-read it, before a human has to.
+**Has an AI assistant read a finished screen or report the way its real reader
+will, and report every point where that reader would get stuck, before a person
+has to review it.**
 
-Part of [software-factory](https://github.com/nazir99/software-factory): the review gate.
+`SKILL.md` is the instruction set for the AI, not for people.
+
+Step 4 of [software-factory](https://github.com/nazir99/software-factory): the
+final check.
 
 ## Why it exists
 
@@ -66,9 +70,10 @@ things the person has actually said and done, and save it to:
 Then ask: *"walk this as <name>"*. Your persona files stay local and are never
 part of this repo.
 
-## In a pipeline
+## The result
 
-Every report ends with a line a pipeline can gate on:
+Every review ends in one of two results: **pass**, or **stalls** with a count and
+the worst one named. The exact line, for pipelines:
 
 ```
 VERDICT: PASS | STALLS <count> | worst: <Where>
